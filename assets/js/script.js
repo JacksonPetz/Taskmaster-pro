@@ -233,6 +233,7 @@ $(".list-group").on("click", "span", function() {
     .val(date);
   $(this).replaceWith(dateInput);
 
+<<<<<<< HEAD
   // enable jquery ui date picker
   dateInput.datepicker({
     minDate: 1,
@@ -242,12 +243,18 @@ $(".list-group").on("click", "span", function() {
     }
   });
 
+=======
+>>>>>>> 75cb7a26cb6a4232a1d1de28f3d9af3d632bdd33
   // automatically bring up the calendar
   dateInput.trigger("focus");
 });
 
 // value of due date was changed
+<<<<<<< HEAD
 $(".list-group").on("change", "input[type='text']", function() {
+=======
+$(".list-group").on("blur", "input[type='text']", function() {
+>>>>>>> 75cb7a26cb6a4232a1d1de28f3d9af3d632bdd33
   var date = $(this).val();
 
   // get status type and position in the list
@@ -268,7 +275,10 @@ $(".list-group").on("change", "input[type='text']", function() {
     .addClass("badge badge-primary badge-pill")
     .text(date);
     $(this).replaceWith(taskSpan);
+<<<<<<< HEAD
     auditTask($(taskSpan).closest(".list-group-item"));
+=======
+>>>>>>> 75cb7a26cb6a4232a1d1de28f3d9af3d632bdd33
 });
 
 // remove all tasks
